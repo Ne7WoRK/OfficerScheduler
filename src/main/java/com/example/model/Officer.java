@@ -27,6 +27,8 @@ public class Officer {
 	@Column(name = "lastName", nullable = false)
 	private String lastName;
 
+	
+	
 	@Column(name = "mobile", nullable = false)
 	private String mobile;
 
@@ -35,6 +37,8 @@ public class Officer {
 	@Column(name = "photo", nullable =  true)
 	private String photo;
 
+	
+	
 	@Column(name = "isAvailable", nullable =  false)
 	@Type(type = "org.hibernate.type.NumericBooleanType")
 	private boolean isAvailable;

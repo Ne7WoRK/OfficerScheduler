@@ -23,9 +23,9 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.multipart.MultipartFile;
 
+import com.example.interfaces.OfficerService;
 //import com.example.encryption.RSAEncryption;
-import com.example.model.*;
-import com.example.service.OfficerService;
+import com.example.model.Officer;
 
 @Controller
 public class OfficerController {
