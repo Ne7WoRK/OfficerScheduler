@@ -1,0 +1,146 @@
+@import url("/css/fonts.css");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	list-style: none;
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+html {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	background-color: #f3f5f9;
+	width: 100%;
+	height: 100%;
+}
+
+#addButton {
+	margin-left: 113px;
+	margin-top: 30px;
+	position: absolute;
+	border: none;
+	background: #f3f5f9;
+	outline: none;
+	cursor: pointer;
+}
+
+html, body {
+	overflow: auto;
+}
+
+#allContent {
+	min-height: 100%;
+	min-width: 100%;
+	position: relative;
+	overflow-x: hidden;
+}
+
+#wrapper {
+	margin-left: 230px;
+	margin-top: 143px;
+	width: 100%;
+	height: 100%;
+	margin-bottom: 40px;
+	position: relative;
+}
+
+#wrapper h3 {
+	text-align: center;
+	font-size: 30px;
+	color: #000000;
+	margin-right: 215px;
+}
+
+#wrapper #officerWrapper {
+	margin-top: 15px;
+	margin-right: 15px;
+	position: relative;
+	width: 380px;
+	height: 110px;
+	display: inline-flex;
+	box-shadow: 0 1px 20px 0 rgba(69, 90, 100, .08);
+	border-radius: 10px;
+}
+
+#wrapper #officerWrapper .officerLeft {
+	width: 110px;
+	height: 110px;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	text-align: center;
+	color: #fff;
+	border-radius: 10px;
+}
+
+#officerWrapper .officerLeft img {
+	display: block;
+	max-width: 100%;
+	max-height: 100%;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	border-radius: 10px;
+	background: #f3f5f9;
+}
+
+#officerWrapper .right {
+	width: 90%;
+	margin-left: 1px;
+	height: auto;
+	background: #38584A;
+	padding: 10px 15px;
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	color: #fff;
+}
+
+button.edit {
+	float: left;
+	position: relative;
+	margin-top: -11px;
+	width: 85px;
+	height: 19px;
+	font-weight: bold;
+	border: 0px;
+	outline: none;
+}
+
+button.edit, button.holidays, button.delete {
+	float: left;
+	margin-top: -11px;
+	width: 85px;
+	height: 19px;
+	font-weight: bold;
+	border: 0px;
+	outline: none;
+}
+
+button.holidays, button.delete {
+	margin-left:3px;
+	
+}
+
+button.edit, button.holidays {
+	position: relative;
+}
+
+button.delete {
+	position: absolute;
+}
+
+button.edit:hover, button.delete:hover, button.holidays:hover {
+	background-color: #ef3a26;
+	color: white;
+	border: 20px;
+	outline: none;
+	cursor: pointer;
+}

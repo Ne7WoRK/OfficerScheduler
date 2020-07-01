@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+<head>
+
+<title>Добавяне/Премахване на служител</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script th:src="@{/js/b99e675b6e.js}"></script>
+<link rel="stylesheet" th:href="@{/css/home.css}" />
+<link rel="stylesheet" th:href="@{/css/officers.css}" />
+<link rel="stylesheet" th:href="@{/css/addOfficerFragment.css}" />
+<link rel="stylesheet" th:href="@{/css/jquery-ui.css}" />
+<script th:src="@{/js/jquery-1.12.4.js}"></script>
+<script th:src="@{/js/jquery-ui.js}"></script>
+
+<script th:src="@{/js/addOfficerFormjQuery.js}"></script>
+
+</head>
+
+<body>
+	<div id="allContent">
+	<button id="addButton"><img id="addButton" src="/images/addofficer.png" class="button" onclick="openForm()" ></button>
+	<div th:replace="/fragments/menu/menufragment :: menu"></div>
+	<div th:replace="/fragments/officers/officerfragment :: officer"></div>
+	<div th:replace="/fragments/officers/addofficerformfragment :: addOfficerForm"></div>
+	<div><!-- Edit officer functionality --></div>
+	<div><!-- Show table with all holidays on screen ! --></div>
+</div>
+</body>
+</html>

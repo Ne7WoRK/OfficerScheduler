@@ -1,0 +1,59 @@
+<!-- <link rel="stylesheet" th:href="@{/css/addOfficerFragment.css}" />
+<link rel="stylesheet" th:href="@{/css/jquery-ui.css}" />
+<script th:src="@{/js/jquery-1.12.4.js}"></script>
+<script th:src="@{/js/jquery-ui.js}"></script>
+
+<script th:src="@{/js/addOfficerFormjQuery.js}"></script> -->
+
+<div id="formBox" th:fragment="addOfficerForm">
+
+	<form method="POST" th:object="${officer}" th:action="@{/add_officer}" enctype="multipart/form-data">
+
+		<div id="addOfficerContentWrapper">
+			<div class="left">
+				<div id="centerPhotoUpload">
+					<label for="real-avatar">Моля изберете снимка на служетеля</label> 
+					<input type="file" name="photo" id="photo" accept="image/png,image/jpeg,image/bmp,image/jpg" hidden="hidden"> 
+					</br>
+					</br> 
+					<span id="custom-text">Няма избран файл !</span>
+				<button type="button" id="custom-avatar" name="custom-avatar" onclick="openForm()">Изберете файл</button>
+					</br> 
+				<span id="valid-formats">Поддържаните формати са: .bmp, .png и .jpg/jpeg !</span>
+				</div>
+			</div>
+			<div class="officerRight">
+				<input type="button" id="closeForm" value="+" onclick="openForm()">
+				<p>
+					Име : <input type="text" placeholder="Име на служителя" th:field="*{firstName}" />
+				</p>
+				<p>
+					Фамилия : <input type="text" placeholder="Фамилия на служителя" th:field="*{lastName}" />
+				</p>
+				<p>
+					Мобилен : <input type="text" placeholder="Мобилен номер" th:field="*{mobile}" />
+				</p>
+
+				<p>
+					Наличен : <select id="isAvailable" th:name="isAvailable" onChange="showDPNew(this)">
+
+						<option value="1" selected="selected">Да</option>
+						<option value="0">Не</option>
+
+					</select>
+				</p>
+
+				<p>
+					Липсва от /дата/: <input id="dateFrom" th:field="*{absentFrom}" type="text" style="display: none" placeholder="Дата от която ще липсва" />
+				</p>
+				<p>
+					До /дата/ включително: <input id="dateTo" th:field="*{absentTo}" type="text" style="display: none" placeholder="Дата до която ще липсва" />
+				</p>
+
+				<div class="buttonContainer">
+					<input type="submit" id="upload" value="Запиши в базата">
+				</div>
+			</div>
+		</div>
+	</form>
+</div>

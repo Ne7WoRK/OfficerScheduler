@@ -1,0 +1,34 @@
+	<div id="wrapper" th:fragment="officer">
+	<h3>Списък с налични служители</h3>
+	<div id="officerWrapper" th:block th:each="officer : ${officers}">
+		<div class="officerLeft">
+			<img th:src="${officer.photo}" th:title="'Полицай: '+${officer.firstName} + ' ' + ${officer.lastName}"
+				alt="user" width="120" height="150">
+		</div>
+			<div class="right">
+				<p>
+					Име :
+					<td th:text="${officer.firstName}">
+				</p>
+				<p>
+					Фамилия :
+					<td th:text="${officer.lastName}">
+				</p>
+				<p>
+					Мобилен:
+					<td th:text="${officer.mobile}">
+				</p>
+				<!--Ако dateFrom <= currentDate && dateTo >=currentDate
+				Статут:Липсва до <dateTo> (Понеделник) включително !
+				else Статут: Наличен
+				-->
+				<p>Статут: Наличен</p>
+				</br>
+				<button class="edit">Редактирай</button>
+				<button class="holidays">Отпуски</button>
+				<form method="POST" th:action="@{'/delete_officer/'+${officer.ID}}">
+				<button class="delete" type="submit">Изтрий</button>
+				</form>
+			</div>
+	</div>
+	</div>

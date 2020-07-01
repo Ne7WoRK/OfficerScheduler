@@ -1,0 +1,172 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	list-style: none;
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+html {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	margin: 0;
+}
+
+#formBox {
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.7);
+	position: absolute;
+	top: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	display: none;
+}
+
+#addOfficerContentWrapper {
+	width: 630px;
+	height: 275px;
+	display: inline-flex;
+	box-shadow: 0 1px 20px 0 rgba(69, 90, 100, .08);
+	border-radius: 10px;
+	top: 50%;
+	left: 20%;
+}
+
+#addOfficerContentWrapper p {
+	padding: 7px;
+}
+
+#addOfficerContentWrapper .left {
+	width: 31%;
+	height: 100%;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	text-align: center;
+	color: #fff;
+	border-radius: 10px;
+	background: #38584A;
+}
+
+#addOfficerContentWrapper .left img {
+	border-radius: 10px;
+	height: 100%;
+	width: 100%;
+}
+
+#addOfficerContentWrapper .left p {
+	font-size: 10px;
+}
+
+#closeForm {
+	width: 40px;
+	float: right;
+	position: absolute;
+	top: 0;
+	transform: rotate(45deg);
+	right: 8px;
+	font-size: 50px;
+	border: 0px;
+	background-color: #38584A;
+	color: white;
+	outline: none;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+#closeForm:hover{
+	color:#ef3a26;
+}
+
+.buttonContainer {
+	position: absolute;
+	top: 80%;
+	left: 50%;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	margin-top: 20px;
+}
+
+#upload {
+	margin-top: 25px;
+	padding: 9px;
+	font-weight: bold;
+	outline: none;
+	background-color: white;
+	border: 0px;
+	cursor: pointer;
+}
+
+input#upload:hover {
+	background-color: #ef3a26;
+	color: #f3f5f9;
+}
+
+input[type="text"] {
+	height: 25px;
+	width: 200px;
+}
+
+#dateFrom #dateTo {
+	position: relative;
+}
+
+#dateTo {
+	position: relative;
+}
+
+#addOfficerContentWrapper .officerRight {
+	width: 85%;
+	background: #38584A;
+	position: relative;
+	padding: 10px 15px;
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	color: #fff;
+}
+
+#centerPhotoUpload {
+	position: relative;
+	left: 50%;
+	top: 40%;
+	transform: translate(-50%, -50%);
+	width: 90%;
+	height: auto;
+}
+
+#custom-avatar {
+	position: relative;
+	color: black;
+	background-color: #f3f5f9;
+	border: #f3f5f9;
+	cursor: pointer;
+	width: 108px;
+	height: 23px;
+	font-weight: bold;
+	outline:none;
+}
+
+#custom-avatar:hover {
+	background-color: #ef3a26;
+	border: 0;
+	outline:none;
+	color: #f3f5f9;
+}
+
+span#custom-text {
+	font-size: 12px;
+}
+
+#valid-formats {
+	font-size: 10.5px;
+	font-weight: bold;
+}
+
+label {
+	font-size: 14.3px;
+}
